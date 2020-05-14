@@ -1,0 +1,10 @@
+piVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: ubi8repo
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - example.com/example/ubi-minimal
+    source: bastion.ocp50.example.com:6001/ubi8/ubi-minimal
+

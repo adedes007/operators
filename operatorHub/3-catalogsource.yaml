@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: my-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: bastion.ocp50.example.com:5000/olm/redhat-operators:v1 
+  displayName: Tolys Operator Catalog
+  publisher: grpc
